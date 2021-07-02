@@ -6,7 +6,7 @@
 + You're at a company that is "shifting left" and trying to implement Docker Image scanning as a part of the code review process. In particular, when an Engineer submits a Pull Request, all Dockerfiles (within the repo) need to be scanned for vulnerabilities.
 
 # Initialization
-+ `git clone https://gist.github.com/e664541f1c5b0c6fe4da658f02e6bf2d.git`
++ `git clone https://github.com/zroof-credible/appsec-assignment.git`
     + During the assignment, you will be adding files to this repo (in your own environment).
     + **HINT:** You should transfer this repository to a private repo (in your own Github account).  This will allow you to test the Github Actions integration that you will create (more context below).
 
