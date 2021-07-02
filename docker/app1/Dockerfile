@@ -1,12 +1,10 @@
-FROM debian:stretch-20210208-slim
+FROM debian:stretch-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -y &&\
     apt-get dist-upgrade -y &&\
-    apt-get install -y apache2 \
-        wget \
-        build-essential &&\
+    apt-get install -y wget &&\
     apt-get autoremove &&\
     apt-get clean &&\
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

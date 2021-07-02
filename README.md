@@ -16,7 +16,7 @@
     + For every "Docker application", build the corresponding Docker Image and run [Trivy](https://github.com/aquasecurity/trivy) on the built image.
     + For every [Trivy](https://github.com/aquasecurity/trivy) scan, log the results to stdout.
         + **HINT:** Think about the developer experience.
-    + If a `HIGH` or `CRITICAL` vulnerability is found, exit with a non-zero status code.
+    + If an `HIGH` or `CRITICAL` vulnerability is found (that does not have a fix available), exit with a non-zero status code.
         + **NOTE:** You must scan all "Docker applications" before you emit the status code.  In other words, you can't fail the script on the first `HIGH` or `CRITICAL` vulnerability.
 
 2. Use [Github Actions](https://docs.github.com/en/actions) to:
